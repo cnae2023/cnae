@@ -6,7 +6,8 @@
     font-family: 'noto sans',sans-serif;
     color: #222222;
   }
-  /*Comienzan las clases reutilizables*/
+ 
+ 
   .btn-verde {
     text-decoration: none;
     color: White;
@@ -19,9 +20,10 @@
     display: inline-block;
     align-self: center;
   }
+
   #principal {    
   width:100%; ;  
-  max-width:2500px;
+  max-width:1200px;
   margin: 50px auto 0 auto;    
 
 }
@@ -175,6 +177,8 @@
     color:white;
     display: flex;
     flex-direction: column;
+    width:80%;
+
   }
   #contenedor {
     width: 80%;
