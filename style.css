@@ -175,11 +175,10 @@
     background-attachment: fixed;
     height: 100vh;
     color:white;
-    display: block;
-/*    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     width:100%;
-  margin: 0 auto 0 auto;    
-
+ 
   }
   #contenedor {
     width: 80%;
@@ -256,17 +255,10 @@
     margin-bottom: 3rem;
   }
   /*termina 5ta sección*/
-  /*footer*/
-  
-  footer{
-    background-color: black;
-    color: white;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  /*aquí termina el footer*/
-  
-  
+   /*phone*/
+@media screen and (min-width: 320px) and (max-width:600px) {
+
+   .mitad {
+     width: 70%;
+   }
+}
