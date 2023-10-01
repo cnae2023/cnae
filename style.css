@@ -33,9 +33,9 @@
   }
   
 .ocultar {
-
   display:none;
   }
+
   .mostrar{
   display:block;
    }
@@ -255,12 +255,52 @@
     margin-bottom: 3rem;
   }
   /*termina 5ta sección*/
-   /*phone*/
+
+
+   /*phone tamaño de la pantalla del celular para que el contenido se adapte */
 @media screen and (min-width: 320px) and (max-width:600px) {
 
-   .mitad {
-     width: 70%;
-     margin-left:2em;
+   #cuarta-seccion {
+     width: 95%;
+     
+     margin-left:2%;
+     margin-right:2%;
     
    }
+  #primera-seccion{
+     width: 95%;
+     
+     margin-left:2%;
+     margin-right:2%;
+  }
+} 
+
+
+/* rango de reslucion   desde 769 hasta 1300*/
+@media screen and (min-width: 769) and (max-width:1300px) {
+
+
 }
+
+/* 1300 en adelante */
+
+@media screen and (min-width: 1300px )  {
+
+
+}
+
+/* table */
+@media screen and (min-width: 601px) and (max-width:768px) {
+
+
+}
+
+ 
+/*ipad*/
+@media screen and (min-width: 769px) and (max-width:1200px) {
+
+
+}
+
+
+  
