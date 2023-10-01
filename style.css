@@ -84,7 +84,7 @@ float:right;
   #primera-seccion-contenido>p {
     text-transform: capitalize;
     font-family: 'montserrat',sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
   }
@@ -95,7 +95,7 @@ float:right;
   #primera-seccion-contenido > h1 {
     font-family: 'montserrat',sans-serif;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
   }
@@ -256,8 +256,12 @@ float:right;
   /*termina 5ta sección*/
 
   .frase {
-    text-align: center;
+   text-align: center;
+    width:70%;
     color: black;
+    font-size:1em;
+    
+   
   }
   
 .ocultar {
@@ -273,16 +277,29 @@ float:right;
 @media screen and (min-width: 320px) and (max-width:600px) {
 
    #cuarta-seccion {
-     width: 95%;
+     width: 110%;
      margin:auto;
+     height:100%;
      
 
    }
   #primera-seccion{
-     width: 100%;
- 
-     
+     width: 120%;
+     height: 100%;
+     margin:auto;
    }
+
+  .mitad{
+    width:40%;
+  }
+
+#quinta-seccion-derecha img{
+  width:100%;
+}
+
+#segunda-seccion{
+     width: 120%;
+}
 } 
 
 
