@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>2DO CURSO</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--Primera sección-->
+    <div id="primera-seccion">
+      <div id="barra-navegacion">
+        <p id="logo">CURSO <span style="color: #20bf6b;">2DO .</span></p>
+        <nav>
+          <a href="#INICIO">Inicio</a>
+          <a href="#NUESTRO">Nuestro Colegio</a>
+          <a href="#CONTACTO">Contacto</a>
+        </nav>
+      </div>
+      <div id="primera-seccion-contenido">
+        <p>BACHILLERATO EN INFORMATICA</p>
+        <hr>
+        <h1>2DO CURSO BTI</h1>
+        <a href="#" class="btn-verde" onclick="vermas('MAS');"	id="MAS">Más información</a>
+         
+
+        <span class="ocultar" id ="desplegar">
+          <P> INFORMACION SOBRE LAS MATERIAS QUE SE DESARROLLAN</P>
+          <a href="#" class="btn-verde" onclick="vermas('MENOS');"	id="MENOS"> Volver </a>
+
+          </span>
+
+      </div>
+    </div>
+      <!--Segunda sección-->
+      <div id="segunda-seccion">
+        <p class="frase">  INFORMACION ADICIONAL SOBRE LOS PROYECTOS REALIZADOS</p>
+         
+      </div>
+
+    <!--Tercera sección-->
+    <div id="tercera-seccion">
+      <div id="titulo">
+        <h2>Clases destacados</h2>
+        <hr>
+      </div>
+      <div id="container-tercera-seccion">
+        <div class="img-tercera">
+          <img src="1.jpg" alt="">
+          <h6>Simposio empresarial</h6>
+          <p>Clases de hardware</p>
+          <a href="#"  class="btn-verde" onclick="vermasevento('MASEVENTO');"	id="MASEVENTO">Más información</a>
+          <span class="ocultar" id ="DESPLEGAREVENTO">
+            <P> INFORMACION sobre las clases </P>
+            <a href="#" class="btn-verde" onclick="vermasevento('MENOSEVENTO');"	id="MENOSEVENTO"> Volver </a>
+  
+            </span>
+  
+        </div>
+        <div class="img-tercera">
+          <img src="2.jpg" alt="">
+          <h6>Clases de Laboratorio</h6>
+          <p>Un día dedicado  ....</p>
+          <a href="#" class="btn-verde">Más información</a>
+        </div>
+      </div>
+    </div>
+<!--cuarta sección-->
+<div id="cuarta-seccion">
+  <div id="contenedor">
+    <div id="cuarta-seccion-izq" class="mitad"></div>
+    <div id="cuarta-seccion-der" class="mitad">
+      <h3>Sobre este Proyecto</h3>
+      <hr>
+      <p> .....hablar sobre el esfuerzo y dedicacion para este proyecto. y por que eligieron este tema</p>
+      <a href="#" class="btn-verde">Más información</a>
+    </div>
+  </div>
+</div>
+<!--Quinta sección-->
+<div id="quinta-seccion">
+  <div id="quinta-seccion-izquierda">
+    <h3>REcesos </h3>
+    <hr>
+    <p>Momentos captados en los recesos</p>
+    <a href="#" class="btn-verde">Más información</a>
+  </div>
+  <div id="quinta-seccion-derecha">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="">
+    <img src="5.jpg" alt="">
+    <img src="6.jpg" alt="">
+  </div>
+</div>
+  <!-- footer-->
+  <!--<footer>
+    <p>Bogotá - Colombia email:escdisanjosenorteied10@educacionbogota.edu.co</p>
+    <p>Copyright 2021 <span Style="Color: #20bf6b;">Colegio San José Norte IED</span></p>
+  </footer>-->
+<SCRIPT>
+function vermas(id){
+  if(id=="MAS"){
+  document.getElementById("desplegar").className="mostrar"
+  document.getElementById("MAS").style.display="none"; 
+   
+  }
+  else{
+  document.getElementById("desplegar").className="ocultar"
+   document.getElementById("MAS").style.display="block"; 
+  }
+  event.preventDefault();
+  }
+  
+  function vermasevento(id){
+  if(id=="MASEVENTO"){
+  document.getElementById("DESPLEGAREVENTO").className="mostrar"
+  document.getElementById("MASEVENTO").style.display="none"; 
+   
+  }
+  else{
+  document.getElementById("DESPLEGAREVENTO").className="ocultar"
+   document.getElementById("MASEVENTO").style.display="block"; 
+  }
+  event.preventDefault();
+  }
+</SCRIPT>
+
+  </body>
+</html>
