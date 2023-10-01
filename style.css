@@ -26,7 +26,8 @@
 #principal {    
   width:100%; ;  
 
-  margin: 0 auto 0 auto;    
+   margin-left:1%;
+    margin-right:-2%;
 
 }
 
@@ -42,8 +43,7 @@
     color:white;
 / * esto le agregue */
     width:100%;
-    margin-left:1%;
-    margin-right:2%;
+   
   }
   
   #barra-navegacion{
