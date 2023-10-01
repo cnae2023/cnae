@@ -7,6 +7,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+<div id="principal">
     <!--Primera sección-->
     <div id="primera-seccion">
       <div id="barra-navegacion">
@@ -25,7 +26,7 @@
          
 
         <span class="ocultar" id ="desplegar">
-          <P> INFORMACION SOBRE LAS MATERIAS QUE SE DESARROLLAN</P>
+          <P> <span style="color: #20bf6b;"> INFORMACION SOBRE LAS MATERIAS QUE SE DESARROLLAN</span></P>
           <a href="#" class="btn-verde" onclick="vermas('MENOS');"	id="MENOS"> Volver </a>
 
           </span>
@@ -92,12 +93,8 @@
     <img src="6.jpg" alt="">
   </div>
 </div>
-  <!-- footer-->
-  <!--<footer>
-    <p>Bogotá - Colombia email:escdisanjosenorteied10@educacionbogota.edu.co</p>
-    <p>Copyright 2021 <span Style="Color: #20bf6b;">Colegio San José Norte IED</span></p>
-  </footer>-->
-<SCRIPT>
+</div>
+ <SCRIPT>
 function vermas(id){
   if(id=="MAS"){
   document.getElementById("desplegar").className="mostrar"

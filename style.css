@@ -19,7 +19,12 @@
     display: inline-block;
     align-self: center;
   }
-  
+  #principal {    
+  width:100%; ;  
+  max-width:2500px;
+  margin: 50px auto 0 auto;    
+
+}
   .frase {
     text-align: center;
     color: black;
@@ -165,7 +170,7 @@
   
   #cuarta-seccion {
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.905)),url(fondo2.jpg) no-repeat center/cover;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     height: 100vh;
     color:white;
     display: flex;
