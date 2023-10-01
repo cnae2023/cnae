@@ -5,6 +5,7 @@
     height: 100vh;
     font-family: 'noto sans',sans-serif;
     color: #222222;
+ 
   }
  
  
@@ -21,27 +22,17 @@
     align-self: center;
   }
 
-  #principal {    
+/* contenedor principal, dentro de body */
+#principal {    
   width:100%; ;  
-  max-width:1200px;
+
   margin: 0 auto 0 auto;    
 
 }
-  .frase {
-    text-align: center;
-    color: black;
-  }
-  
-.ocultar {
-  display:none;
-  }
 
-  .mostrar{
-  display:block;
-   }
    
   /*terminan los reutilizables*/
-  
+   
   /*comienza 1ra sección*/
   
   #primera-seccion{
@@ -49,11 +40,15 @@
     background-attachment: fixed;
     height: 100vh;
     color:white;
+/ * esto le agregue */
+    width:100%;
+    margin:auto;
   }
   
   #barra-navegacion{
-    display: flex;
-    flex-direction: row;
+/*    display: block; *//*flex*/
+ 
+/*    flex-direction: row;*/
     justify-content: space-between;
     margin: auto 5rem;
     padding-top: 2rem;
@@ -64,12 +59,14 @@
     text-transform: uppercase;
     font-weight: 700;
     font-stretch: wider;
+    float:left;
   }
   nav>a {
     text-decoration: none;
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
+float:right;
   }
   
   nav>a:hover {
@@ -77,9 +74,10 @@
   }
   #primera-seccion-contenido{
     margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
+    display: block; /* flex */
+/*    flex-direction: column;*/
     text-align: center;
+    width:100%;
   }
   
   #primera-seccion-contenido>p {
@@ -106,8 +104,8 @@
   #segunda-seccion{
     background-color: #f4f5f9;
     min-height: 10rem;
-    display: flex;
-    flex-direction: column;
+    display: block; /*    display: flex;*/
+                 /*    flex-direction: column;*/
     justify-content: center;
     padding: 3rem;
   }
@@ -116,8 +114,8 @@
   
   #tercera-seccion{
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    display:block;/*  display: flex;*/
+    /*flex-direction: column;*/
     width: 80%;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -142,8 +140,8 @@
   
   #container-tercera-seccion{
     text-align: center;
-    display: flex;
-    flex-direction: row;
+    display: block; /*  display: flex;*/
+   /*    flex-direction: row;*/
   }
   .img-tercera{
     padding-right: 1rem;
@@ -256,23 +254,34 @@
   }
   /*termina 5ta sección*/
 
+  .frase {
+    text-align: center;
+    color: black;
+  }
+  
+.ocultar {
+  display:none;
+  }
+
+  .mostrar{
+  display:block;
+   }
+
 
    /*phone tamaño de la pantalla del celular para que el contenido se adapte */
 @media screen and (min-width: 320px) and (max-width:600px) {
 
    #cuarta-seccion {
      width: 95%;
+     margin:auto;
      
-     margin-left:2%;
-     margin-right:2%;
-    
+
    }
   #primera-seccion{
      width: 95%;
+     margin:auto;
      
-     margin-left:2%;
-     margin-right:2%;
-  }
+   }
 } 
 
 
