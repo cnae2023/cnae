@@ -163,6 +163,8 @@ float:right;
   
   .img-tercera > img {
     max-width: 100%;
+	margin-top: 5%;
+
   }
   
   /*termina tercera sección*/
@@ -260,7 +262,7 @@ float:right;
 
   .frase {
    text-align: center;
-    width:70%;
+   
     color: black;
     font-size:1em;
     
@@ -301,7 +303,7 @@ float:right;
 }
 
 #segunda-seccion{
-     width: 100%;
+     width: 101%;
 }
 } 
 
