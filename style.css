@@ -280,8 +280,8 @@ float:right;
 @media screen and (min-width: 320px) and (max-width:600px) {
 
    #cuarta-seccion {
-     width: 110%;
-     margin:auto;
+     width: 120%;
+     margin:0 auto;
      height:100%;
      
 
@@ -301,7 +301,7 @@ float:right;
 }
 
 #segunda-seccion{
-     width: 120%;
+     width: 100%;
 }
 } 
 
