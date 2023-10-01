@@ -210,10 +210,11 @@ float:right;
   /*termina 4ta sección*/
   /*comienza 5ta sección*/
   #quinta-seccion {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    display: block; /*flex*/
+    float:left;
+/*    flex-direction: row;*/
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -235,9 +236,11 @@ float:right;
   }
   
   #quinta-seccion-derecha{
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+/*    flex: 2;*/
+  /*  display: grid;*/
+    display:block;
+    float:left;
+/*    grid-template-columns: repeat(2,1fr);*/
     gap:15px 10px;
     justify-items: center;
     align-items: center;
