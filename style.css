@@ -175,8 +175,8 @@
     background-attachment: fixed;
     height: 100vh;
     color:white;
-    display: flex;
-    flex-direction: column;
+    display: block;
+/*    flex-direction: column;*/
     width:100%;
   margin: 0 auto 0 auto;    
 
