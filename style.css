@@ -212,8 +212,8 @@ float:right;
   /*termina 4ta sección*/
   /*comienza 5ta sección*/
   #quinta-seccion {
-    width: 100%;
-    margin: auto;
+    width: 95%;
+    margin: 5%;
     display: block; /*flex*/
     float:left;
 /*    flex-direction: row;*/
