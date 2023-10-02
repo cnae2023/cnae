@@ -188,8 +188,12 @@ float:right;
     flex-direction: row;
   }
    .mitad {
-     width: 50%;
+     width: 60%;
    }
+   .mitad1 {
+     width: 40%;
+   }
+
   
   #cuarta-seccion-der >h3 {
     text-transform: uppercase;
@@ -295,7 +299,7 @@ float:right;
    }
 
   .mitad{
-    width:40%;
+    width:60%;
   }
 
 #quinta-seccion-derecha img{
@@ -303,7 +307,7 @@ float:right;
 }
 
 #segunda-seccion{
-     width: 100%;
+     width: 95%;
 }
 } 
 
