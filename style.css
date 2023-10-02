@@ -22,15 +22,7 @@
     align-self: center;
   }
 
-/* contenedor principal, dentro de body */
-#principal {    
-  width:100%; 
-
-   margin-left:1%;
-    margin-right:0;
-
-}
-
+ 
    
   /*terminan los reutilizables*/
    
@@ -39,17 +31,15 @@
   #primera-seccion{
     background: linear-gradient(rgba(68,13,13,0.35),rgba(38,2,2,0.446)),url(fondo.jpg) no-repeat center/cover;
     background-attachment: fixed;
+/* es lo mismo que 100% */
     height: 100vh;
     color:white;
-/ * esto le agregue */
+/ * esto le agregue , ancho 100% segun el tamaño de la pantalla*/
     width:100%;
    
   }
   
   #barra-navegacion{
-/*    display: block; *//*flex*/
- 
-/*    flex-direction: row;*/
     justify-content: space-between;
     margin: auto 5rem;
     padding-top: 2rem;
@@ -67,16 +57,17 @@
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
-float:right;
+    float:right;
   }
   
   nav>a:hover {
     color: #44bd32;
   }
-  #primera-seccion-contenido{
+  
+#primera-seccion-contenido{
     margin-top: 8rem;
-    display: block; /* flex */
-/*    flex-direction: column;*/
+    display: block;
+ 
     text-align: center;
     width:100%;
   }
@@ -105,8 +96,8 @@ float:right;
   #segunda-seccion{
     background-color: #f4f5f9;
     min-height: 10rem;
-    display: block; /*    display: flex;*/
-                 /*    flex-direction: column;*/
+    display: block; 
+ 
     justify-content: center;
     padding: 3rem;
   }
@@ -115,8 +106,8 @@ float:right;
   
   #tercera-seccion{
     margin: auto;
-    display:block;/*  display: flex;*/
-    /*flex-direction: column;*/
+    display:block; 
+ 
     width: 80%;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -141,8 +132,8 @@ float:right;
   
   #container-tercera-seccion{
     text-align: center;
-    display: block; /*  display: flex;*/
-   /*    flex-direction: row;*/
+    display: block;  
+ 
   }
   .img-tercera{
     padding-right: 1rem;
@@ -176,22 +167,26 @@ float:right;
     background-attachment: fixed;
     height: 100vh;
     color:white;
-    display: flex;
-    flex-direction: column;
+/*    display: flex;
+    flex-direction: column;*/
+    display: block;
+    float:left;
     width:100%;
  
   }
   #contenedor {
-    width: 100%;
+width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    display: block;
+    float: left;
+    margin: 5% 40% 10% 1%;
+
   }
    .mitad {
-     width: 60%;
+     width: 70%;
    }
    .mitad1 {
-     width: 40%;
+     width: 30%;
    }
 
   
@@ -201,16 +196,26 @@ float:right;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    margin: 1%;
+    display: block;
+    float:left;
   }
   #cuarta-seccion-der >hr {
     width: 4.5rem;
     border-color: #44bd32;
     margin-left: 0;
     margin-bottom: 3rem;
+    display:block;
+    float: left;
   }
   
   #cuarta-seccion-der >p {
     margin-bottom: 4rem;
+    margin:2%;
+    width:70%;
+    display: block;
+    float:right;
+
   }
   
   /*termina 4ta sección*/
