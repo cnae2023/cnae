@@ -80,19 +80,33 @@
 <!--Quinta sección-->
 <div id="quinta-seccion">
   <div id="quinta-seccion-izquierda">
+
     <h3>REcesos </h3>
     <hr>
     <p>Momentos captados en los recesos</p>
-    <a href="#" class="btn-verde">Más información</a>
+
+   
+
   </div>
+
   <div id="quinta-seccion-derecha">
+   <div class="mySlides fade">
     <img src="3.jpg" alt="">
+   </div>
+    <div class="mySlides fade">
     <img src="4.jpg" alt="">
+    </div>
+    <div class="mySlides fade">
     <img src="5.jpg" alt="">
+    </div>
+    <div class="mySlides fade">
     <img src="6.jpg" alt="">
+    </div>
+     
   </div>
+ 
 </div>
-<!--</div>-->
+ 
  <SCRIPT>
 function vermas(id){
   if(id=="MAS"){
@@ -117,8 +131,38 @@ function vermas(id){
   document.getElementById("DESPLEGAREVENTO").className="ocultar"
    document.getElementById("MASEVENTO").style.display="block"; 
   }
-  event.preventDefault();
+  event.preventDefault(); // para que la pagina no se actualize o refresque
   }
+
+
+ 
+
+var slideIndex = 0;
+
+showSlides();
+
+function showSlides() {
+
+    var i;
+
+    var slides = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < slides.length; i++) {
+
+    slides[i].style.display = "none";
+
+    }
+
+    slideIndex++;
+
+    if(slideIndex > slides.length) {slideIndex = 1}
+
+    slides[slideIndex-1].style.display = "block";
+
+    setTimeout(showSlides,2000);
+
+}
+
 </SCRIPT>
 
   </body>
