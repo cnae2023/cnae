@@ -223,9 +223,9 @@ width: 100%;
   #quinta-seccion {
     width: 95%;
     margin: 5%;
-    display: block; /*flex*/
+    display: block; 
     float:left;
-/*    flex-direction: row;*/
+ 
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -247,11 +247,10 @@ width: 100%;
   }
   
   #quinta-seccion-derecha{
-/*    flex: 2;*/
-  /*  display: grid;*/
+ 
     display:block;
     float:left;
-/*    grid-template-columns: repeat(2,1fr);*/
+ 
     gap:15px 10px;
     justify-items: center;
     align-items: center;
@@ -287,6 +286,9 @@ width: 100%;
    }
 
 
+
+/* para diseños adaptables a cualquier tamaño de monitor minimo 320 y maximo 600*/
+
    /*phone tamaño de la pantalla del celular para que el contenido se adapte */
 @media screen and (min-width: 320px) and (max-width:600px) {
 
@@ -320,6 +322,30 @@ width: 100%;
 /* rango de reslucion   desde 769 hasta 1300*/
 @media screen and (min-width: 769) and (max-width:1300px) {
 
+   #cuarta-seccion {
+     width: 100%;
+     margin:0 auto;
+     height:100%;
+     
+
+   }
+  #primera-seccion{
+     width: 100%;
+     height: 100%;
+     margin:auto;
+   }
+
+  .mitad{
+    width:60%;
+  }
+
+#quinta-seccion-derecha img{
+  width:100%;
+}
+
+#segunda-seccion{
+     width: 95%;
+}
 
 }
 
@@ -327,12 +353,60 @@ width: 100%;
 
 @media screen and (min-width: 1300px )  {
 
+   #cuarta-seccion {
+     width: 100%;
+     margin:0 auto;
+     height:100%;
+     
+
+   }
+  #primera-seccion{
+     width: 100%;
+     height: 100%;
+     margin:auto;
+   }
+
+  .mitad{
+    width:60%;
+  }
+
+#quinta-seccion-derecha img{
+  width:100%;
+}
+
+#segunda-seccion{
+     width: 95%;
+}
 
 }
 
 /* table */
 @media screen and (min-width: 601px) and (max-width:768px) {
 
+   #cuarta-seccion {
+     width: 120%;
+     margin:0 auto;
+     height:100%;
+     
+
+   }
+  #primera-seccion{
+     width: 120%;
+     height: 100%;
+     margin:auto;
+   }
+
+  .mitad{
+    width:60%;
+  }
+
+#quinta-seccion-derecha img{
+  width:100%;
+}
+
+#segunda-seccion{
+     width: 95%;
+}
 
 }
 
@@ -340,6 +414,30 @@ width: 100%;
 /*ipad*/
 @media screen and (min-width: 769px) and (max-width:1200px) {
 
+   #cuarta-seccion {
+     width: 120%;
+     margin:0 auto;
+     height:100%;
+     
+
+   }
+  #primera-seccion{
+     width: 120%;
+     height: 100%;
+     margin:auto;
+   }
+
+  .mitad{
+    width:60%;
+  }
+
+#quinta-seccion-derecha img{
+  width:100%;
+}
+
+#segunda-seccion{
+     width: 95%;
+}
 
 }
 

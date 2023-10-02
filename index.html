@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-<!--<div id="principal">-->
+ 
     <!--Primera sección-->
     <div id="primera-seccion">
       <div id="barra-navegacion">
@@ -28,11 +28,13 @@
 
       </div>
     </div>
+
+
       <!--Segunda sección-->
       <div id="segunda-seccion"><br><br><br>
         <p class="frase">  INFORMACION ADICIONAL SOBRE LOS PROYECTOS REALIZADOS</p>
-         
       </div>
+
 
     <!--Tercera sección-->
     <div id="tercera-seccion">
@@ -46,10 +48,10 @@
           <h6>Simposio empresarial</h6>
           <p>Clases de hardware</p>
           <a href="#"  class="btn-verde" onclick="vermasevento('MASEVENTO');"	id="MASEVENTO">Más información</a>
-          <span class="ocultar" id ="DESPLEGAREVENTO">
+  
+        <span class="ocultar" id ="DESPLEGAREVENTO">
             <P> INFORMACION sobre las clases </P>
             <a href="#" class="btn-verde" onclick="vermasevento('MENOSEVENTO');"	id="MENOSEVENTO"> Volver </a>
-  
             </span>
   
         </div>
@@ -61,6 +63,7 @@
         </div>
       </div>
     </div>
+
 
 <!--cuarta sección-->
 <div id="cuarta-seccion">
@@ -77,6 +80,9 @@
     </div>
   </div>
 </div>
+
+
+
 <!--Quinta sección-->
 <div id="quinta-seccion">
   <div id="quinta-seccion-izquierda">
@@ -90,16 +96,16 @@
   </div>
 
   <div id="quinta-seccion-derecha">
-   <div class="mySlides fade">
+   <div class="migaleria">
     <img src="3.jpg" alt="">
    </div>
-    <div class="mySlides fade">
+    <div class="migaleria">
     <img src="4.jpg" alt="">
     </div>
-    <div class="mySlides fade">
+    <div class="migaleria">
     <img src="5.jpg" alt="">
     </div>
-    <div class="mySlides fade">
+    <div class="migaleria">
     <img src="6.jpg" alt="">
     </div>
      
@@ -118,6 +124,8 @@ function vermas(id){
   document.getElementById("desplegar").className="ocultar"
    document.getElementById("MAS").style.display="block"; 
   }
+
+
   event.preventDefault();
   }
   
@@ -137,29 +145,32 @@ function vermas(id){
 
  
 
-var slideIndex = 0;
+//define la variable 
+var galeriaIndex = 0;
 
 showSlides();
 
 function showSlides() {
 
+
+
     var i;
 
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("migaleria"); // captura todas las imagenes 
 
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i++) { // cuenta desde 0 hasta la cantidad de imagenes ej. de 0 a 4
 
-    slides[i].style.display = "none";
+    slides[i].style.display = "none"; // pasa a invisible
 
     }
 
-    slideIndex++;
+    galeriaIndex++; // indicador de imagen actual que se va a mostrar 
 
-    if(slideIndex > slides.length) {slideIndex = 1}
+    if(galeriaIndex > slides.length) {galeriaIndex = 1}
 
-    slides[slideIndex-1].style.display = "block";
+    slides[galeriaIndex-1].style.display = "block"; // para mostrar la imagen
 
-    setTimeout(showSlides,2000);
+    setTimeout(showSlides,2000); // autoejecuta la function showslides cada 2000 milisegundos
 
 }
 
